@@ -9,12 +9,16 @@
 </template>
 
 <style lang="scss">
+body {
+  background-color: #121212;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #f3f7f0;
 }
 
 #nav {
@@ -25,7 +29,7 @@
     color: #2c3e50;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #00b295;
     }
   }
 }

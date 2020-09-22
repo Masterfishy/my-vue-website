@@ -1,18 +1,45 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <b-container id="home">
+    <b-row id="about-me">
+      <b-col class="col-12 col-md-6">
+        <b-img id="headshot" alt="Headshot" rounded="circle" fluid src="../assets/bald-pose.jpg"/>
+      </b-col>
+      <b-col class="col-12 col-md-6">
+        <b-row id="greeting">
+          Hello, hello!
+        </b-row>
+        <b-row>
+          <p>
+            My name is Zach Long. I am a senior at Virginia Tech studying computer science.
+          </p>
+        </b-row>
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
   name: "Home",
-  components: {
-    HelloWorld
+  components: {},
+  computed: {
   }
 };
 </script>
+
+<style scoped>
+#home {
+  max-width: 1200px;
+}
+
+#headshot {
+  max-width: 50%;
+}
+
+#greeting {
+    font-size: 40px;
+    font-weight: bold;
+}
+</style>
